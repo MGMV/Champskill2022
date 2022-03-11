@@ -1,0 +1,41 @@
+﻿<Window x:Class="Pistolet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pistolet"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="Заправочный пистолет" Height="250" Width="250" 
+        MinHeight="260" MinWidth="250"
+        MaxHeight="260" MaxWidth="250">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="№: "/>
+            <TextBox x:Name="IdTextBox"/>
+            <TextBlock Text="Вид топлива: "/>
+            <ComboBox x:Name="TypeToplivoComboBox">
+                <ComboBoxItem>92</ComboBoxItem>
+                <ComboBoxItem>95</ComboBoxItem>
+                <ComboBoxItem>98</ComboBoxItem>
+                <ComboBoxItem>DT</ComboBoxItem>
+            </ComboBox>
+            <TextBlock Text="Статус колонки: "/>
+            <ComboBox x:Name="StatusKolonkoComboBox">
+                <ComboBoxItem>Пистолет в колонке</ComboBoxItem>
+                <ComboBoxItem>Пистолета в колонке нет</ComboBoxItem>
+            </ComboBox>
+           
+            <TextBlock Text="Статус подачи топлива: "/>
+            <ComboBox x:Name="StatusToplivoComboBox">
+                <ComboBoxItem>Подача топлива разрешена</ComboBoxItem>
+                <ComboBoxItem>Подача топлива запрещена</ComboBoxItem>
+            </ComboBox>
+            <CheckBox Content="Авто" x:Name="AvtoCheckBox" Click="AvtoCheckBox_Click"/>
+            <Button Content="Подача топлива" Click="Button_Click"/>
+            <CheckBox Content="Состояние бака(Полный бак)" x:Name="StatusBackComboBox"/>
+            <ProgressBar x:Name="ZapravkaAvtoProgress" Height="20"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

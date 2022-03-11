@@ -1,0 +1,16 @@
+F:\WPF\Pistolet\bin\Debug\Pistolet.exe.config
+F:\WPF\Pistolet\bin\Debug\Pistolet.exe
+F:\WPF\Pistolet\bin\Debug\Pistolet.pdb
+F:\WPF\Pistolet\obj\Debug\Pistolet.csproj.AssemblyReference.cache
+F:\WPF\Pistolet\obj\Debug\Pistolet.csproj.SuggestedBindingRedirects.cache
+F:\WPF\Pistolet\obj\Debug\MainWindow.g.cs
+F:\WPF\Pistolet\obj\Debug\App.g.cs
+F:\WPF\Pistolet\obj\Debug\Pistolet_MarkupCompile.cache
+F:\WPF\Pistolet\obj\Debug\Pistolet_MarkupCompile.lref
+F:\WPF\Pistolet\obj\Debug\MainWindow.baml
+F:\WPF\Pistolet\obj\Debug\Pistolet.g.resources
+F:\WPF\Pistolet\obj\Debug\Pistolet.Properties.Resources.resources
+F:\WPF\Pistolet\obj\Debug\Pistolet.csproj.GenerateResource.cache
+F:\WPF\Pistolet\obj\Debug\Pistolet.csproj.CoreCompileInputs.cache
+F:\WPF\Pistolet\obj\Debug\Pistolet.exe
+F:\WPF\Pistolet\obj\Debug\Pistolet.pdb
