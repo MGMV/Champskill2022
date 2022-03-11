@@ -1,0 +1,41 @@
+﻿<Window x:Class="ModulAZS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModulAZS"
+        mc:Ignorable="d"
+        Title="АЗС" Height="520" Width="350"
+        MinHeight="470" MinWidth="250"
+        MaxHeight="600" MaxWidth="500" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel>
+            <TextBlock  Grid.Column="0" Text="Введите № АЗС: "/>
+            <TextBox Name="IdTextBox" Grid.Column="1" Height="40"/>
+            <Button Grid.Column="1" Margin="0 10 0 30" x:Name="DownloadButonn" Click="DownloadButonn_Click" Content="Загрузить данные"/>
+            <StackPanel Name="InfoStation" Visibility="Hidden">
+                <TextBlock>Географический адрес АЗС</TextBlock>
+                <TextBox x:Name="AddressTextBox"></TextBox>
+                <TextBlock>Цена литра АИ-92 в рублях</TextBlock>
+                <TextBox x:Name="Price92TextBox"></TextBox>
+                <TextBlock>Остаток АИ-92 в хранилище в литрах</TextBlock>
+                <TextBox x:Name="Amount92TextBox"></TextBox>
+                 <TextBlock>Цена литра АИ-95 в рублях </TextBlock>
+                <TextBox x:Name="Price95TextBox"></TextBox>
+                <TextBlock>Остаток АИ-95 в хранилище в литрах </TextBlock>
+                <TextBox x:Name="Amount95TextBox"></TextBox>
+                 <TextBlock>Цена литра АИ-98 в рублях </TextBlock>
+                <TextBox x:Name="Price98TextBox"></TextBox>
+                 <TextBlock>Остаток АИ-98 в хранилище в литрах </TextBlock>
+                <TextBox x:Name="Amount98TextBox"></TextBox>
+                 <TextBlock>Цена литра ДТ в рублях </TextBlock>
+                <TextBox x:Name="PriceDisTextBox"></TextBox>
+                 <TextBlock>Остаток ДТ в хранилище в литрах </TextBlock>
+                <TextBox x:Name="AmountDisTextBox"></TextBox>
+                <Button x:Name="SaveInfoStationButton" Click="SaveInfoStationButton_Click" Margin="0 10">Сохранить изменения</Button>
+            </StackPanel>
+        </StackPanel>
+        
+       
+    </Grid>
+</Window>
