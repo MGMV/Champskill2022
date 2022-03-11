@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PiterRetailGroupModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CarFillingStation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Address" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FuelT92" Type="Int32" />
+    <Property Name="Price92" Type="Double" />
+    <Property Name="AmountOfFuel92" Type="Int32" />
+    <Property Name="Fuel95" Type="Int32" />
+    <Property Name="Price95" Type="Double" />
+    <Property Name="AmountIfFuel95" Type="Int32" />
+    <Property Name="Fuel98" Type="Int32" />
+    <Property Name="Price98" Type="Double" />
+    <Property Name="AmountIfFuel98" Type="Int32" />
+    <Property Name="FuelDis" Type="String" MaxLength="55" FixedLength="false" Unicode="true" />
+    <Property Name="PriceDis" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="AmountIfFuelDis" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="PiterRetailGroupEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CarFillingStation" EntityType="Self.CarFillingStation" />
+  </EntityContainer>
+</Schema>

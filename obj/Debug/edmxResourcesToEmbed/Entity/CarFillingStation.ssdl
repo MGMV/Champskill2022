@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище PiterRetailGroupModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CarFillingStation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="FuelT92" Type="int" />
+    <Property Name="Price92" Type="float" />
+    <Property Name="AmountOfFuel92" Type="int" />
+    <Property Name="Fuel95" Type="int" />
+    <Property Name="Price95" Type="float" />
+    <Property Name="AmountIfFuel95" Type="int" />
+    <Property Name="Fuel98" Type="int" />
+    <Property Name="Price98" Type="float" />
+    <Property Name="AmountIfFuel98" Type="int" />
+    <Property Name="FuelDis" Type="nvarchar" MaxLength="55" />
+    <Property Name="PriceDis" Type="money" />
+    <Property Name="AmountIfFuelDis" Type="int" />
+  </EntityType>
+  <EntityContainer Name="Хранилище PiterRetailGroupModelContainer">
+    <EntitySet Name="CarFillingStation" EntityType="Self.CarFillingStation" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
