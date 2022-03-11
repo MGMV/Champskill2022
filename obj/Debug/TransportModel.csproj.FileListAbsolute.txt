@@ -1,0 +1,16 @@
+F:\WPF\TransportModel\bin\Debug\TransportModel.exe.config
+F:\WPF\TransportModel\bin\Debug\TransportModel.exe
+F:\WPF\TransportModel\bin\Debug\TransportModel.pdb
+F:\WPF\TransportModel\obj\Debug\TransportModel.csproj.AssemblyReference.cache
+F:\WPF\TransportModel\obj\Debug\TransportModel.csproj.SuggestedBindingRedirects.cache
+F:\WPF\TransportModel\obj\Debug\MainWindow.g.cs
+F:\WPF\TransportModel\obj\Debug\App.g.cs
+F:\WPF\TransportModel\obj\Debug\TransportModel_MarkupCompile.cache
+F:\WPF\TransportModel\obj\Debug\TransportModel_MarkupCompile.lref
+F:\WPF\TransportModel\obj\Debug\MainWindow.baml
+F:\WPF\TransportModel\obj\Debug\TransportModel.g.resources
+F:\WPF\TransportModel\obj\Debug\TransportModel.Properties.Resources.resources
+F:\WPF\TransportModel\obj\Debug\TransportModel.csproj.GenerateResource.cache
+F:\WPF\TransportModel\obj\Debug\TransportModel.csproj.CoreCompileInputs.cache
+F:\WPF\TransportModel\obj\Debug\TransportModel.exe
+F:\WPF\TransportModel\obj\Debug\TransportModel.pdb

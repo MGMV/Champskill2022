@@ -1,0 +1,42 @@
+﻿<Window x:Class="TransportModel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TransportModel"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="MainWindow" Height="200" Width="309">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="гос. Номер: "/>
+                <TextBox x:Name="GosNumberAutoTextBlox" Width="100"></TextBox>
+                <CheckBox x:Name="ReadGosNumberCheckBox" Content="Читаем ли номер?"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Вид топлива: "/>
+                <RadioButton Content="92"/>
+                <RadioButton Content="95"/>
+                <RadioButton Content="98"/>
+                <RadioButton Content="DT"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Объем бака: "/>
+                <TextBox x:Name="VolumeBackTextBlox" Width="100"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Текущее кол-во л.: "/>
+                <Slider x:Name="CountToplivoSlider"  Width="150" ValueChanged="CountToplivoSlider_ValueChanged" Maximum="300"/>
+                <TextBlock x:Name="CountToplivoTextBlox">0</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="StartToplivoButton" Content="Подача топлива" Click="StartToplivoButton_Click"/>
+                <Button x:Name="StopToplivoButton" Content="Завершить заправку" Margin="20 0" Click="StopToplivoButton_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <ProgressBar x:Name="ZapravkaProgress" Height="10"  Width="309"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
