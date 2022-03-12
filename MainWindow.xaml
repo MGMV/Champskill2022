@@ -1,0 +1,32 @@
+﻿<Window x:Class="ModulZapravka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModulZapravka"
+        mc:Ignorable="d"
+        Title="Заправочный пистолет" Height="250" Width="250" 
+        MinHeight="260" MinWidth="250"
+        MaxHeight="260" MaxWidth="250">
+    <Grid>
+        <StackPanel x:Name="StartWindowPanel">
+            <TextBlock Text="Введите № станции АЗС: "/>
+            <TextBox x:Name="IdStationTextBox"/>
+            <Button x:Name="BeginJobButton" Click="BeginJobButton_Click">Начать работу</Button>
+            <StackPanel x:Name="DostupFuelPanel" Margin="0 40 0 0">
+                <ComboBox Name="FuelComboBox">Выберите доступное топливо</ComboBox>
+                <StackPanel x:Name="RejimZapravkiPanel">
+                    <ComboBox x:Name="RejimZapravkiComboBox">Выберите доступный режим заправки</ComboBox>
+                    <StackPanel x:Name="SposobOplatiPanel">
+                        <ComboBox x:Name="OplataComboBox">Выберите способ оплаты</ComboBox>
+                        <StackPanel x:Name="DataCardPanel">
+                            <TextBox x:Name="NumberCardTextBox" Text="Введите номер карты"></TextBox>
+                            <TextBox x:Name="UserCardTextBox" Text="Введите держателя карты"></TextBox>
+                            <Button x:Name="OplataButton" Content="Оплатить" Click="OplataButton_Click"></Button>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
